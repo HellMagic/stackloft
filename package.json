@@ -1,0 +1,32 @@
+{
+  "name": "stackloft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "cookie-parser": "^1.3.5",
+    "debug": "^2.2.0",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "leanengine": "^0.1.5",
+    "lodash": "^3.10.1",
+    "method-override": "^2.3.5",
+    "nodemon": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HellMagic/stackloft.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HellMagic/stackloft/issues"
+  },
+  "homepage": "https://github.com/HellMagic/stackloft#readme"
+}
