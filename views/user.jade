@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 TODO
+  if user
+    h2 {user.get('username')}
+
+  else
+    h2 没有登录

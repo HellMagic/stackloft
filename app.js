@@ -6,6 +6,9 @@ var AV = require('leanengine');
 
 // 获取测试路由对象
 var test = require('./routes/test');
+var users = require('./routes/users');
+var articles = require('./routes/articles');
+var comments = require('./routes/comments');
 // 加载测试hook
 var cloud = require('./cloud');
 
@@ -26,6 +29,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //加载路由
 app.use('/test', test);
+app.use('/users', users);
+app.use('/articles', articles);
+app.use('/comments', comments);
 
 app.get('/', function(req, res) {
     res.redirect('/test');
