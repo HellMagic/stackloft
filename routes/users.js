@@ -52,4 +52,12 @@ router.get('/logout', function(req, res, next) {
     return res.redirect('/users/login');
 });
 
+router.get('/me', function(req, res, next) {
+    if (AV.User.current()) {
+        res.status(200).json(AV.User.current());
+    } else {
+        res.status(200).send('no user');
+    }
+})
+
 module.exports = router;

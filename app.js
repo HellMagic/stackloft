@@ -9,6 +9,7 @@ var test = require('./routes/test');
 var users = require('./routes/users');
 var articles = require('./routes/articles');
 var comments = require('./routes/comments');
+var services = require('./routes/services');
 // 加载测试hook
 var cloud = require('./cloud');
 
@@ -31,6 +32,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/test', test);
 app.use('/users', users);
 app.use('/articles', articles);
+app.use('/services', services);
 app.use('/comments', comments);
 
 app.get('/', function(req, res) {
